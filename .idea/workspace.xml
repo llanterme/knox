@@ -51,6 +51,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="KnoxService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="za.co.knox.restservice.RestServiceApplication" />
@@ -82,7 +93,7 @@
       <workItem from="1621533767839" duration="1292000" />
       <workItem from="1621536604298" duration="320000" />
       <workItem from="1621922940448" duration="5000" />
-      <workItem from="1623236639993" duration="1636000" />
+      <workItem from="1623236639993" duration="2136000" />
     </task>
     <servers />
   </component>
