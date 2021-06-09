@@ -40,7 +40,7 @@ public class ConfigProperties {
     @Value("${app.topupDebug}")
     private String topupDebug;
 
-    @Value("${app.secretKey}")
+    @Value("${app.secretKey:}")
     private String secretKey;
 
     @Value("${app.smtpUser}")

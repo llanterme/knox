@@ -36,6 +36,7 @@ app:
   mobileRechargeApiUserName: aatadmintest3
   mobileRechargeApiPassword: 2W874sAFwN
   topupDebug: true
+  secretKey: Y1cR4$P8[6,Nr61
   smtpEnabled: true
   smtpUser: AKIAR25TUUKOHMSJDEKW
   smtpPassword: BFyox+ap3d6ezMt+r9tc6CHZd5zgP3QslG7iCeiPUS5c

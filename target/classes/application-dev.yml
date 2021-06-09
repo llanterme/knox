@@ -2,8 +2,8 @@ server:
   port: 8080
 spring.datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/knox_db
-#    url: jdbc:mysql://host.docker.internal:3306/knox_db
+#    url: jdbc:mysql://127.0.0.1:3306/knox_db
+    url: jdbc:mysql://host.docker.internal:3306/knox_db
     username: root
     password: Passw0rd1
     platform: mysql
