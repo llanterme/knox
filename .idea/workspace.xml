@@ -5,114 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4438e3ab-bdf7-44c6-b57f-b7bf448afa88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/Knox_logo_full_colour.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-sit.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V10__remove_mandatory_fields.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__init_flyway.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__create_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V3__create_questions_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V4__add_screening_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V5__add_temp_field.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V6__update_questions_field.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V7__add_staff_indicator_field.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V8__add_id_number_field.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V9__increse_address_column_size.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/RestServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/Runner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/AppConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/AuthenticationConfig$AuthenticationUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/AuthenticationConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/CORSAdvice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/ConfigProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/DbConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/config/ThreadConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/controller/KnoxController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/Api.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/CompanyStaff.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/OtpGateWayRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/OtpGateWayResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/ReportScreeningDateCounts.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/ReportScreeningDateCountsWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/domain/ScreeningQuestions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/ApiEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/CompanyEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/CompanyStaffEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/OtpEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/PurchaseHistoryEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/ScreeningEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/entity/ScreeningQuestionsEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/enums/EligibilityReasonEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/enums/KnoxResponseCodesEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/enums/KnoxServiceResponseCodesEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/exceptions/ApiAuthenticationException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/exceptions/KnoxEligibilityException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/exceptions/KnoxServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/exceptions/ServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/exceptions/TokenEngineServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/provider/ApiAuthenticationProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/provider/impl/ApiAuthenticationProviderImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/ApiRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/CompanyRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/CompanyStaffRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/OtpRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/ScreeningQuestionsRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/repository/ScreeningRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/request/CompanyRegistrationRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/request/OtpRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/request/PinnedTopUpRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/request/ScreeningRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/BaseResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/CompanyRegistrationResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/EligibilityResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/ErrorResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/OtpResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/PinnedTopUpResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/response/ScreeningResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/ApiService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/CompanyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/EligibilityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/ApiServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/CompanyServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/EligibilityServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/MessagingServiceImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/MessagingServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/QuestionsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/ReportServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/ScreeningServiceImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/Impl/ScreeningServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/MessagingService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/PropertyBag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/QuestionsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/ReportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/ScreeningService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/eligibility/CompanyLockedEligibilityCheck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/eligibility/DuplicateMobileEligibilityCheck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/eligibility/OtpValidEligibilityCheck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/service/eligibility/UserAuthenticationEligibilityCheck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/AES.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/DozerHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/LoggerUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/PdfUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/RestTemplateResponseErrorHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/RestUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/za/co/knox/restservice/utils/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/knox.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knox.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +83,7 @@
       <workItem from="1621533767839" duration="1292000" />
       <workItem from="1621536604298" duration="320000" />
       <workItem from="1621922940448" duration="5000" />
-      <workItem from="1623236639993" duration="323000" />
+      <workItem from="1623236639993" duration="906000" />
     </task>
     <servers />
   </component>

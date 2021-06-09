@@ -1,10 +1,10 @@
 server:
-  port: 80
+  port: 8080
 spring.datasource:
   driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://aasoodv2e3vokh.cxgvg5bgclpg.us-east-2.rds.amazonaws.com:3306/knox_db
-  username: admin
-  password: Passw0rd1
+  url: jdbc:mysql://127.0.0.1:3306/knox_db
+  username: root
+  password: L@nt$rm$01
   platform: mysql
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
