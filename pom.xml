@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>za.co.knox</groupId>
+    <artifactId>knox-service</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.0.RELEASE</version>
+    </parent>
+        <dependencies>
+
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>2.2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-xjc</artifactId>
+                <version>2.2.5</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+
+<!--            <dependency>-->
+<!--                <groupId>org.apache.httpcomponents</groupId>-->
+<!--                <artifactId>httpclient</artifactId>-->
+<!--                <version>4.3.4</version>-->
+<!--            </dependency>-->
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-commons</artifactId>
+                <version>2.2.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>javax.persistence-api</artifactId>
+                <version>2.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.awaitility</groupId>
+                <artifactId>awaitility</artifactId>
+                <version>3.1.2</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>itextpdf</artifactId>
+                <version>5.5.13.1</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>net.sf.dozer</groupId>
+                <artifactId>dozer</artifactId>
+                <version>5.5.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>1.6.2</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.cxf.xjc-utils</groupId>
+                <artifactId>cxf-xjc-runtime</artifactId>
+                <version>2.7.0</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.ws/spring-ws-core -->
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-ws-core</artifactId>
+                <version>2.2.0.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-core</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+
+        </dependencies>
+
+    <properties>
+        <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
+        <spring.cloud.version>1.3.0.RELEASE</spring.cloud.version>
+        <swagger.version>2.7.0</swagger.version>
+        <skip.integration.tests>true</skip.integration.tests>
+        <skip.unit.tests>false</skip.unit.tests>
+        <private.registry.server>registry.hubcba.com</private.registry.server>
+        <deploy.image>${project.artifactId}:%l</deploy.image>
+        <spring.cloud.stream.version>1.2.1.RELEASE</spring.cloud.stream.version>
+        <!--Plugin versions -->
+
+        <compiler.plugin.version>3.6.1</compiler.plugin.version>
+        <deploy.plugin.version>2.8.2</deploy.plugin.version>
+        <docker.plugin.version>0.31.0</docker.plugin.version>
+        <release.plugin.version>2.5.3</release.plugin.version>
+        <flyway.version>6.3.2</flyway.version>
+    </properties>
+
+
+
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <delimiters>
+                        <delimiter>@</delimiter>
+                    </delimiters>
+                    <useDefaultDelimiters>false</useDefaultDelimiters>
+                </configuration>
+            </plugin>
+
+          <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <extensions>true</extensions>
+
+                <configuration>
+                    <skipRun>${skip.integration.tests}</skipRun>
+                    <skipBuild>${skip.unit.tests}</skipBuild>
+<!--                    <registry>${private.registry.server}</registry>-->
+                    <buildArgs>
+                        <JAR_FILE>${project.artifactId}-${project.version}.jar</JAR_FILE>
+                        <ARTIFACT_ID>${project.artifactId}</ARTIFACT_ID>
+                    </buildArgs>
+
+                    <images>
+                        <image>
+                            <name>${deploy.image}</name>
+                            <build>
+                                <dockerFileDir>${project.basedir}</dockerFileDir>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>push-image</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+<!--                <version>${release.plugin.version}</version>-->
+                <!--<configuration> -->
+                <!--<releaseVersion>${build.version}</releaseVersion> -->
+                <!--<tag>${build.version}</tag> -->
+                <!--<developmentVersion>${project.version}</developmentVersion> -->
+                <!--</configuration> -->
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>
+                        za.co.knox.restservice.RestServiceApplication
+                    </mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+<!--                <plugin>-->
+<!--                    <groupId>org.codehaus.mojo</groupId>-->
+<!--                    <artifactId>build-helper-maven-plugin</artifactId>-->
+<!--                    <version>1.7</version>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <id>add-source</id>-->
+<!--                            <phase>generate-sources</phase>-->
+<!--                            <goals>-->
+<!--                                <goal>add-source</goal>-->
+<!--                            </goals>-->
+<!--                            <configuration>-->
+<!--                                <sources>-->
+<!--                                    <source>${project.build.directory}/generated/cxf</source>-->
+<!--                                </sources>-->
+<!--                            </configuration>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
+            </plugins>
+        </pluginManagement>
+    </build>
+    <!--</distributionManagement>-->
+</project>
