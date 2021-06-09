@@ -3,7 +3,7 @@ server:
 spring.datasource:
   driverClassName: com.mysql.jdbc.Driver
   url: jdbc:mysql://172.31.33.153:3306/knox_db
-  username: root
+  username: knox_user
   password: L@nt$rm$01
   platform: mysql
   jpa:
